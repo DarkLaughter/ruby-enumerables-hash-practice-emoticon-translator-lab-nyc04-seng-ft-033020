@@ -24,7 +24,8 @@ emoticon_hash = load_library(file_path)
     return "Sorry, not a known emoticon"
   else
     return emo_hash[:get_emoticon][emoticon]
-    
+  end
+  
 end
 
 def get_english_meaning
