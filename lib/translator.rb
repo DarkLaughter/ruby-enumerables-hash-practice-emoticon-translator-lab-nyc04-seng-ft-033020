@@ -21,7 +21,10 @@ def get_japanese_emoticon(file_path, emoticon)
 emoticon_hash = load_library(file_path)
 
   if emoticon_hash[:get_emoticon][emoticon] == nil
-    return "Sorry, "
+    return "Sorry, not a known emoticon"
+  else
+    return emo_hash[:get_emoticon][emoticon]
+    
 end
 
 def get_english_meaning
