@@ -5,8 +5,8 @@ def load_library(file_path)
   emoticons = YAML.load_file(file_path)
 
     emo_hash = {
-      :get_meaning => {},
-      :get_emoticon => {}
+      'get_meaning' => {},
+      'get_emoticon' => {}
     }
 
     emoticons.each do |name, symbols|
@@ -17,8 +17,11 @@ def load_library(file_path)
   emo_hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file_path, emoticon)
+emoticon_hash = load_library(file_path)
+
+  if emoticon_hash[:get_emoticon][emoticon] == nil
+    return
 end
 
 def get_english_meaning
