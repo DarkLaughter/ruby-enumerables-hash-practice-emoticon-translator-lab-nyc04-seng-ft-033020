@@ -23,7 +23,7 @@ emoticon_hash = load_library(file_path)
   # if emoticon_hash[:get_emoticon][emoticon] == nil
   #   return "Sorry, not a known emoticon"
   # else
-  #   return emo_hash[:get_emoticon][emoticon]
+  #   return emoticon_hash[:get_emoticon][emoticon]
   # end
 
 end
