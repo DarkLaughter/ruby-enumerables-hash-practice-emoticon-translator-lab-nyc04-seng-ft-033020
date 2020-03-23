@@ -11,7 +11,7 @@ def load_library(file_path)
 
     emoticons.each do |name, symbols|
       emo_hash[:get_meaning][symbols[1]] = name
-      emo_hash[:get_emoticon][symbols[0]] = emoticons[name[1]]
+      emo_hash[:get_emoticon][symbols[0]] = emoticons[name
     end
 
   emo_hash
@@ -25,7 +25,7 @@ emoticon_hash = load_library(file_path)
   else
     return emo_hash[:get_emoticon][emoticon]
   end
-  
+
 end
 
 def get_english_meaning
